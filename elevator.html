@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>elevatorArray</title>
+</head>
+<body>
+  <script>
+    
+ var str= "^v^^v^^vv^vv^vv^^vvv^^v^^^vv^^^vv^v^^vvv^^^^^v^v^v^v^vv^^vvv^^^^vvv^^vvv^^^^^vvvv^^vvv^vv^^vv^vv^v^^^";
+ var array1=[]
+ var floorNumber=0;
+
+function breakTheString(){
+for (var i=0; i<=str.length; i++) {
+  array1.push(str[i]);
+  }
+  console.log(array1);
+  
+  for (var j=0; j<=array1.length; j++){
+    if (array1[j]=='^'){
+      floorNumber= floorNumber+1;
+      console.log(floorNumber);
+    } else {
+      floorNumber= floorNumber-1;
+      if (floorNumber<0){floorNumber=0}
+      console.log(floorNumber);
+    }
+  }
+  console.log(floorNumber);
+}
+
+  </script>
+
+</body>
+</html>

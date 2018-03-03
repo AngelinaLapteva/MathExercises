@@ -1,0 +1,33 @@
+ <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>primeNumber</title>
+</head>
+<body>
+  <div class="here"> here: </div>
+  <script>
+
+var a = [5,5,7,12,14]
+function primeNum(comingArrayElement){
+	 for (var dividing=2; dividing<comingArrayElement-1; dividing++) {
+	     if (comingArrayElement % dividing ===0){
+	     	console.log('this element is not prime : ', comingArrayElement)
+	     	b=a.indexOf(comingArrayElement);
+	     	console.log('index of this element:',b);
+	     	// a.splice(b, 1);
+	     	// console.log(a);
+	     } 
+}
+}
+
+a.forEach(function(element) {
+    primeNum(element);
+});
+
+  </script>
+
+
+
+</body>
+</html>

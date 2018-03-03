@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+<script> 
+var a=[1,6,9,2,8];
+var x, r;
+
+for (var i = 0; i<a.length; i++) {
+ 
+	r = Math.floor(Math.random()* a.length);
+	x = a[r];
+	a[r]=a[i];
+	a[i]=x;
+}
+console.log(a);
+</script>
+</body>
+</html>

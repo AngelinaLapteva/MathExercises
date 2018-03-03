@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrays</title>
+</head>
+<body>
+  <script>
+    // summ all the elements of the array
+var array1 = [423, 258, 747, 42, 544, 486, 28, 321, 365, 805, 628, 931, 233, 702, 546, 803, 644, 415, 339, 539, 829, 940, 681, 328];
+var b=array1.reduce(function(totalAmount, currentValue){
+  return totalAmount+currentValue
+})
+console.log(b);
+
+
+
+// using forEach 
+var sum=0;
+function summofAll(arrayHere){
+  arrayHere.forEach(function(certainElementOfTheArray){
+  sum+=certainElementOfTheArray;
+  })
+  return sum;
+}
+
+var c = summofAll([423, 258, 747, 42, 544, 486, 28, 321, 365, 805, 628, 931, 233, 702, 546, 803, 644, 415, 339, 539, 829, 940, 681, 328]);
+console.log('c=',c);
+
+  </script>
+
+</body>
+</html>

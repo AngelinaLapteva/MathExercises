@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrinTo1</title>
+</head>
+<body>
+  <script>
+    
+
+
+
+
+var array1=Array.apply(null, {length: 9999}).map(Function.call, Number);
+var array2=[];
+	
+	for (var i=2; i<array1.length; i++) {
+
+var z=0;
+		while(array1[i] !=1){
+			if (array1[i] % 2 == 0) { array1[i] = array1[i] / 2; } 
+								else { array1[i] = array1[i] * 3 + 1; }
+		z++;
+
+		}
+	array2.push(z); 
+	}
+
+ console.log(array2);
+var max=Math.max.apply(null, array2);
+var itsIndex=array2.indexOf(max)
+console.log('max steps=',max, itsIndex);
+
+
+// while (x != 1) {
+//   if (x % 2 == 0) {
+//     x = x / 2;
+//   } 
+//   else {
+//     x = x * 3 + 1;
+//   }
+//   z++;
+// }
+// alert(z); 
+  </script>
+
+</body>
+</html>

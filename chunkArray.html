@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrinTo1</title>
+</head>
+<body>
+  <script>
+
+function chunkArrayInGroups(arr, size) {
+  var newArr=[];
+  
+  for (var i=0; i < arr.length-1; i++) {
+    newArr=arr.slice(0, i);
+    arr.shift();
+    
+	 
+
+  } arr.push(newArr);console.log(arr);
+ 
+}
+
+
+chunkArrayInGroups(["a", "b", "c", "d"], 2);
+
+  </script>
+
+</body>
+</html>

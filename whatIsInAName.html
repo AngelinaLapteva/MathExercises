@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BrinTo1</title>
+</head>
+<body>
+  <script>
+    
+
+
+function whatIsInAName(collection, source) {
+
+	var keysfor = Object.keys(source); // taking property "last"
+	console.log(source[keysfor]); // return  "Capulet"
+	console.log(keysfor); // return "last"
+	// console.log(collection[0][keysfor]); // return  "Montague"
+	return  collection.filter(function(a) {	
+		if ( a.hasOwnProperty(keysfor) == true && a[keysfor] == source[keysfor] ) {
+			return true;
+		} 
+		
+	})
+
+}
+
+whatIsInAName([{ "a": 1, "b": 2 }, { "a": 1 }, { "a": 1, "b": 2, "c": 2 }], { "a": 1, "b": 2 });
+
+// whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet"});
+
+  </script>
+
+</body>
+</html>

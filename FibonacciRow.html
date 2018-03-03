@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arrays</title>
+</head>
+<body>
+  <div class="here"> here: </div>
+  <script>
+function fibonacci(){
+var a=[1,1];
+
+for(i=2; i<=30; i++){
+  function sum() {
+    return a[i]=a[i-1]+a[i-2]
+  }
+
+
+if (a[a.length-1]<1000000)
+   {a.push(sum());} 
+  };
+  console.log(a);
+
+function primeNum(comingArrayElement){
+   for (var dividing=2; dividing<comingArrayElement; dividing++) {
+       if (comingArrayElement % dividing ===0){
+        console.log('this element is not prime : ', comingArrayElement)
+        
+        
+       } 
+}
+}
+
+a.forEach(function(element) {
+    primeNum(element);
+});
+
+}
+
+  
+
+  </script>
+
+
+</body>
+</html>

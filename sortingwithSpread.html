@@ -1,0 +1,33 @@
+  <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sort an array</title>
+</head>
+<body>
+  <script>
+    
+var a=[1, 2, 4, 3, 8, 5, 9, 6, 12, 0, 3]
+var indexMax;
+var ourLength=a.length;
+var c=[];
+var cutElem;
+for (var i=0; i<ourLength; i++){
+ 	indexMax = a.indexOf(Math.max(...a));
+ 	cutElem = a.splice(indexMax, 1);
+	c.unshift(cutElem)
+}
+console.log(c);
+
+function sum(x, y, z) {
+  return x + y + z;
+}
+
+const numbers = [1, 2, 4, 8];
+
+console.log(Math.floor(Math.random() * 5200) + 1);
+
+  </script>
+
+</body>
+</html>

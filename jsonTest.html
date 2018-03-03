@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>json test</title>
+</head>
+<body>
+	<button id="getMessage">ok</button>
+	<div class="message"></div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+$.ajax({
+    url: 'http://api.wunderground.com/api/61f0a55cb00602dc/conditions/q/Ontario/Toronto.json',
+    type: 'GET',
+    dataType: 'jsonp',
+    success: function(){
+        console.log("It worked!");
+    }
+});
+	</script>
+</body>
+</html>
